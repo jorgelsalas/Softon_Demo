@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">SoftonDemo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about_me">About Me</string>
+
+    <!-- Fragment IDs -->
+    <string name="failed_login_fragment_id">Failed Login Fragment ID</string>
+    <string name="about_me_fragment_id">About Me Fragment ID</string>
+    <string name="log_out_verification_fragment_id">Log Out Verification Fragment ID</string>
+    <string name="map_fragment_id">Map fragment ID</string>
+    <string name="search_fragment_id">Search Fragment ID</string>
+    <!-- END Fragment IDs -->
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">Main Screen</string>
+    <string name="login_tv_password_hint">Password</string>
+    <string name="login_et_username_hint">Username</string>
+    <string name="login_et_dev_name_text">by Jorge Salas</string>
+    <string name="login_tv_title_text">Softon ITG Demo</string>
+    <string name="login_button_text">Login</string>
+    <string name="softon_logo_description">Softon ITG Logo</string>
+    <string name="login_failed_fragment_title">Login Failed!</string>
+
+
+
+    <string name="login_failed_tv_text">Login failed, please check your user credentials and try again.</string>
+    <string name="search_instructions_tv">Type in the name of the place you want to search for and press the Search button.</string>
+    <string name="main_search_button_text">Search!</string>
+    <string name="about_me_tv_text">Hello, my name is Jorge Salas and I hope that you enjoy this app as much as I did developing it.</string>
+    <string name="login_failed_ok_button_text">OK</string>
+    <string name="about_me_ok_button_text">OK</string>
+    <string name="about_me_title_text">About Me</string>
+    <string name="log_out_verification_fragment_tv_text">Are you sure you want to log out?</string>
+    <string name="log_out_verification_cancel_button_text">Cancel</string>
+    <string name="log_out_verification_yes_button_text">Yes</string>
+    <string name="log_out_fragment_title_text">Log Out Verification</string>
+    <string name="main_search_text_hint">Search for a place. Eg: Vegas, Nevada</string>
+    <string name="main_empty_search_warning">Please provide a location to search for...</string>
+    <string name="connected_to_google_services">Connection to Google location services acquired</string>
+    <string name="connection_to_google_services_suspended">Connection to Google location services suspended</string>
+    <string name="connection_to_google_services_failed">Connection to Google location services failed</string>
+    <string name="internet_not_available_warning">Internet not available. Please try again later.</string>
+    <string name="foursquare_error_warning">Something went wrong while querying Foursquare. Please try again later.</string>
+    <string name="geocode_error_warning">Foursquare did not recognize the location specified. Please try a different one.</string>
+    <string name="no_venues_retrieved_from_web_warning">Foursquare could not find any matches for this location. Please review the location you provided and try again.</string>
+
+    <string name="map_tv_distance_text">Distance to current location (km):</string>
+    <string name="fragment_search_button_text">Search!</string>
+
+
+
+
+    <string name="verify_gps_and_network_warning">Please make sure your GPS is enabled and you have network access before trying again</string>
+    <string name="location_not_acquired_warning">Could not acquire your location from the device.</string>
+
+
+
+    <string name="map_not_available_warning">Map not available!!!!</string>
+    <string name="location_currently_unavailable_warning">Location currently unavailable</string>
+    <string name="perform_query_alert">Performing query to FourSquare</string>
+    <string name="unable_to_add_markers_warning">Current location or searched location not available. Please try again later.</string>
+    <string name="user_location_marker_title">Your location</string>
+    <string name="title_activity_map">Map Screen</string>
+    <string name="get_current_focus_returned_null_warning">getCurrentFocus returned null while trying to hide keyboard</string>
+    <string name="map_fragment_et_hint">Search for a place.</string>
+
+
+</resources>

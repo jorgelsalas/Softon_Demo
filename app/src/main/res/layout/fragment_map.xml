@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.softonitg.jorge.softondemo.Fragments.CustomMapFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1">
+
+        <EditText
+            android:id="@+id/map_fragment_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.8"
+            android:hint="@string/map_fragment_et_hint"
+            />
+
+        <Button
+            android:id="@+id/map_fragment_search_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_search_button_text"
+            android:layout_weight="5.2"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/map_fragment_distance_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:text="@string/map_tv_distance_text" />
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.85"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+
+</LinearLayout>
