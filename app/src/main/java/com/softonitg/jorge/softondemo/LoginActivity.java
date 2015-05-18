@@ -53,8 +53,8 @@ public class LoginActivity extends ActionBarActivity {
         dbManager = new DBManager(this);
 
         //TODO: REMOVE THESE STATEMENTS
-        username.setText("maka");
-        password.setText("5555");
+        //username.setText("maka");
+        //password.setText("5555");
     }
 
 
