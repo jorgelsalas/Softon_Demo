@@ -141,7 +141,7 @@ public class CustomMapFragment extends Fragment implements OnMapReadyCallback {
     public void placeMarkers(ArrayList<SimpleMarker> newMarkers){
         Log.e(LOG_TAG, "Placing markers!!!!");
         Log.e(LOG_TAG, "Markers size = " + markers.size());
-        setMarkerList(markers);
+        setMarkerList(newMarkers);
         if (map != null) {
             map.clear();
             LatLngBounds.Builder builder = new LatLngBounds.Builder();

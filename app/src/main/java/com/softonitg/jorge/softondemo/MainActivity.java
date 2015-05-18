@@ -14,12 +14,9 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.gson.Gson;
 import com.softonitg.jorge.softondemo.AsyncTasks.VenueSearchTask;
@@ -46,30 +43,17 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 public class MainActivity extends ActionBarActivity implements LogOutListener, OnVenueSearchCompletedListener,
         ConnectionCallbacks ,OnConnectionFailedListener, OnSearchStartedListener {
 
-    private Button searchButton;
-    private EditText searchCriteria;
     private GoogleServicesHelper googleServicesHelper;
     private LocationManagerHelper locationManagerHelper;
     private Location lastLocation = null;
-    private GoogleMap map = null;
     private FragmentManager fm;
-    private CustomMapFragment mapFragment;
-    private SearchFragment searchFragment;
     private final String LOG_TAG = "MainActivity TAG";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         fm = getSupportFragmentManager();
-        //mapFragment = (CustomMapFragment) fragmentManager.findFragmentById(R.id.map_fragment);
-        //searchFragment = (SearchFragment) fragmentManager.findFragmentById(R.id.search_fragment);
-
-        //searchButton = (Button) findViewById(R.id.search_button);
-        //searchCriteria = (EditText) findViewById(R.id.search_edit_text);
-        //setClickListeners();
-
         if (findViewById(R.id.fragment_container) != null){
             if (savedInstanceState == null){
                 SearchFragment searchFragment = new SearchFragment();
@@ -163,17 +147,6 @@ public class MainActivity extends ActionBarActivity implements LogOutListener, O
         finish();
         logOut();
     }
-
-    /*
-    private void setClickListeners() {
-        searchButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startFourSquareSearch();
-            }
-        });
-    }
-    //*/
 
     private void startFourSquareSearch(String location){
         //Hide Keyboard
